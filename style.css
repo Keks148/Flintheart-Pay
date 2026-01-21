@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background: #0E141B;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #F5C542;
+}
+
+.role-switch {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.primary {
+  background: #F5C542;
+  color: #000;
+}
+
+.card {
+  background: #151C26;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}

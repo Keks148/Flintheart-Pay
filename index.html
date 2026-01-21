@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flintheart Pay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Flintheart Pay</h1>
+
+    <div class="role-switch">
+      <button onclick="showClient()">Client</button>
+      <button onclick="showTrader()">Trader</button>
+    </div>
+
+    <div id="client" class="card hidden">
+      <h2>Client panel</h2>
+      <button class="primary">Get card</button>
+      <input type="number" placeholder="Enter amount (UAH)">
+      <button class="primary">Send</button>
+    </div>
+
+    <div id="trader" class="card hidden">
+      <h2>Trader panel</h2>
+      <p>Balance: 0 USDT</p>
+      <button class="primary">Confirm payment</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
