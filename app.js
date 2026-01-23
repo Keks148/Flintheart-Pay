@@ -1,3 +1,4 @@
+alert("app.js загружен");
 const API = "https://flintheart-backend.onrender.com";
 
 if (window.Telegram && Telegram.WebApp) {
