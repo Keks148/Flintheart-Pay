@@ -19,3 +19,15 @@ button {
   background:#c9a23f;
   font-weight:bold;
 }
+.login-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #e0e0e0;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+.login-btn:active {
+  background: #cfcfcf;
+}
