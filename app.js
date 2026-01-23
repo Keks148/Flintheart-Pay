@@ -11,8 +11,9 @@ async function login() {
   });
 
   const data = await res.json();
-  if (!res.ok) {
-    document.getElementById("error").innerText = "Ошибка входа";
+
+  if (!data.token) {
+    document.getElementById("error").innerText = "Неверный логин или пароль";
     return;
   }
 
@@ -23,17 +24,10 @@ async function login() {
 function showPanel(role) {
   document.getElementById("login").style.display = "none";
   document.getElementById("panel").style.display = "block";
-
   document.getElementById("roleTitle").innerText = "Роль: " + role;
 
   const content = document.getElementById("content");
-  if (role === "admin") {
-    content.innerHTML = "<b>Админ-панель</b><br>Создание пользователей";
-  }
-  if (role === "trader") {
-    content.innerHTML = "<b>Трейдер</b><br>Подтверждение платежей";
-  }
-  if (role === "client") {
-    content.innerHTML = "<b>Клиент</b><br>Создание заявок";
-  }
+  if (role === "admin") content.innerHTML = "<b>Админ-панель</b><br>Создание пользователей";
+  if (role === "trader") content.innerHTML = "<b>Трейдер</b><br>Подтверждение платежей";
+  if (role === "client") content.innerHTML = "<b>Клиент</b><br>Создание заявок";
 }
